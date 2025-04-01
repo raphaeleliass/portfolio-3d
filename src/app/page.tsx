@@ -1,11 +1,13 @@
 "use client"
+import Footer from "@/components/layout/Footer"
+import Gallery from "@/components/layout/Gallery"
 import Hero from "@/components/layout/Hero"
-import ShowCase from "@/components/layout/ShowCase"
+import ModelShowcase from "@/components/layout/ModelShowcase"
+import Shapes from "@/components/layout/Shapes"
 import { Html, useProgress } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 import { useEffect, useState } from "react"
 
-// 🔹 Componente de Loading separado
 const Loader = () => {
   const { progress } = useProgress()
   return (
@@ -39,12 +41,14 @@ export default function Page() {
     )
 
   return (
-    <main className="z-40">
-      <article className="relative">
+    <>
+      <main className="relative z-40 flex flex-col items-center justify-center gap-32">
         <Hero />
-        <ShowCase />
-      </article>
-      <div className="mt-32 h-dvh text-6xl">olá</div>
-    </main>
+        <ModelShowcase />
+        <Shapes />
+        <Gallery />
+      </main>
+      <Footer />
+    </>
   )
 }
