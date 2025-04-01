@@ -3,7 +3,7 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 // modelos 3d
-import QueenModel from "@/components/3D/models/QueenModel"
+import QueenModel from "../models/QueenModel"
 
 // fiber && drei imports
 import { Canvas } from "@react-three/fiber"
@@ -18,9 +18,7 @@ import {
 gsap.registerPlugin(ScrollTrigger)
 
 // pré-carregamento dos modelos 3d
-useGLTF.preload("/models/the_queen_of_swords.glb")
-useGLTF.preload("/models/rhetorician.glb")
-useGLTF.preload("/models/skull.glb")
+useGLTF.preload("/models/characters/the_queen_of_swords.glb")
 
 export default function ShowScene() {
   return (
@@ -28,7 +26,7 @@ export default function ShowScene() {
       <Canvas camera={{ position: [0, 0, 5], fov: 60 }}>
         <directionalLight position={[1, 5, 1]} intensity={4} />
         <ambientLight intensity={3} />
-        <Float speed={5} rotationIntensity={0.2} floatIntensity={1}>
+        <Float speed={5} rotationIntensity={0.2} floatIntensity={0.5}>
           <QueenModel />
         </Float>
         <OrbitControls
