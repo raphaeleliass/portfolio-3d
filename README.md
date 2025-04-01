@@ -18,6 +18,8 @@
 
 </div>
 
+![imagem do projeto](/public/assets/image.png)
+
 ---
 
 ## ✨ Funcionalidades
