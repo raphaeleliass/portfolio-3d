@@ -20,6 +20,10 @@
 
 ![imagem do projeto](/public/assets/image.png)
 
+## 🌐 Acesso ao Site
+
+Você pode acessar o site em produção através do link: [Portfolio 3D](https://raphaeleliass-portfolio-3d.vercel.app)
+
 ---
 
 ## ✨ Funcionalidades
