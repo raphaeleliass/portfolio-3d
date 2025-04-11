@@ -15,7 +15,6 @@ import OldHouse from "../3D/models/OldHouse"
 
 useGLTF.preload("/models/places/ship_in_clouds.glb")
 useGLTF.preload("/models/places/old_house.glb")
-useGLTF.preload("/models/places/fantasy.glb")
 
 export default function Gallery() {
   const landModels = useMemo(
